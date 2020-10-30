@@ -16,5 +16,5 @@ then
 fi
 
 set PWM_OUT 12345678
-set MIXER_FILE etc/mixers-sitl/vectored6dof_sitl.main.mix
+set MIXER_FILE etc/mixers/IO_pass.main.mix
 set MIXER custom
