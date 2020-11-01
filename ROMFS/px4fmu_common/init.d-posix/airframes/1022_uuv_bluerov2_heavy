@@ -13,6 +13,9 @@ then
 	# disable circuit breaker for airspeed sensor
 	param set CBRK_AIRSPD_CHK 162128
 
+    # set for Formulas and Vehicles
+    param set UUV_INPUT_MODE 2
+
 fi
 
 set PWM_OUT 12345678
