@@ -47,5 +47,5 @@ fi
 
 set PWM_OUT 12345678
 # set MIXER IO_pass
-set MIXER vectored6dof
+set MIXER IO_pass_limited
 
