@@ -354,6 +354,10 @@ bool MavlinkReceiver::evaluate_target_ok(int command, int target_system,
 
 void MavlinkReceiver::handle_message_setpoint_motor(mavlink_message_t *msg)
 {
+  offboard_control_mode_s offboard_control_mode{};
+  offboard_control_mode.timestamp = hrt_absolute_time();
+  _offboard_control_mode_pub.publish(offboard_control_mode);
+  
 	mavlink_setpoint_motor_t sp;
 	mavlink_msg_setpoint_motor_decode(msg, &sp);
 
